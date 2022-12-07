@@ -22,6 +22,7 @@ const usersControllers = new UsersControllers();
 //Quando essa rota for chamada tem que acessar o controller dela
 //Aplicar o Middleware na rota 
 usersRoutes.post('/', myMiddleware, usersControllers.create);
+usersRoutes.put('/:id', usersControllers.update);
     
 
 
